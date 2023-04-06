@@ -17,7 +17,7 @@ app.use(cors());
 
 app.get('/env', async (req, res) => {
     const data = {
-        "api_url2": global.env.Secret_Key,
+        "api_url2": global.env.API_KEY,
     }
     res.json(data);
 })
